@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{site.title}}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+        html { 
+            background: url('{{site.indexBG}}') no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        h1 {
+            color: {{site.clubNameColor}};
+            font-family: "{{site.clubNameFont}}";
+            text-transform: uppercase;
+            font-size: 4.5em;
+        }
+
+        h2 {
+            color: {{site.indexFontColor}};
+            font-family: "{{site.indexFont}}";
+            word-wrap: normal;
+            font-size: 4em;
+        }
+
+        a.pages {
+            font-size: 2em;
+            visited: {{site.indexFontColor}};
+            color: {{site.indexFontColor}};
+        }
+
+        a.pages:hover {
+            font-size: 2.1em;
+        }
+
+        .imgLink {
+            transition: transform .2s;
+        }
+
+        .imgLink:hover {
+            transform: scale(1.2);
+        }
+
+        .logo {
+            padding-top: 4px;
+            border-radius: 50%;
+            height: 8em;
+            width: 8em;
+        }
+
+        .centerize {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            word-wrap: normal;
+        }
+
+        .animated {
+            -webkit-animation-duration: 6s;
+            animation-duration: 6s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+         
+        @-webkit-keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+         
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+         
+        .fadeIn {
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 33.33%;
+            padding: 5px;
+        }
+
+    </style>
+    <body>
+        <div class="animated fadeIn centerize">
+            <img src="{{site.logo}}" class="logo">
+            <h1>{{site.title}}</h1>
+            <h2>{{site.description}}</h2>
+            <br>
+            <a href="home.html" class="pages">Home</a>
+            <br>
+            <a href="pastEvents.html" class="pages">Past Events</a>
+            <br>
+            <a href="People" class="pages">People</a>
+            <br>
+            <br>
+            <div class="row">
+                {%for link in site.data.social%}
+                    {%if link.url != null%}
+                        <div class="column">
+                            <div class="imgLink">>
+                                <a href="{{link.url}}">
+                                    <img src="{{link.img}}">
+                                </a>
+                            </div>
+                        </div>
+                    {%endif%}
+                {%endfor%}
+            </div>
+        </div>
+    </body>
+</html>
