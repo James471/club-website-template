@@ -1,16 +1,16 @@
 # You can add other links if you want to but you will have to provide an image too. Just leave the url section blank if you don't
 # need a link to a particular site. We have provided some additional icons in assets/img folder. Check them out if you want to change.
 - url: https://m.facebook.com/astroclubiiserm/
-  img: /assets/img/facebook.png
+  img: /assets/img/social/facebook.png
 
 - url: https://github.com/TheAstronomyClub/
-  img: /assets/img/github.png
+  img: /assets/img/social/github.png
 
 - url: https://www.instagram.com/astroclub.iiserm/
-  img: /assets/img/instagram.png
+  img: /assets/img/social/instagram.png
 
 - url: mailto:astroclub@iisermohali.ac.in
-  img: /assets/img/mail.png
+  img: /assets/img/social/mail.png
 
 - url: 
-  img: /assets/img/twitter.png
+  img: /assets/img/social/twitter.png

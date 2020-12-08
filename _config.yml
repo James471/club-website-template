@@ -16,8 +16,36 @@ clubNameColor: white
 #The font for the club name
 clubNameFont: Arial, Helvetica, sans-serif
 
-#The font color for everything else on the first page
-indexFontColor: white
+#The font for everything in the header
+headerFont:
 
-#The font for everything else on the first page
-indexFont: Arial, Helvetica, sans-serif
+#The fontcolor of everything in the header
+headerFontColor:
+
+#The background of the header. If you want image, leave the headerBackgroundColor empty.
+headerBackgroundImage:
+headerBackgroundColor:
+
+#The font for everything in the footer
+footerFont: Arial, Helvetica, sans-serif
+
+#The fontcolor of everything in the footer
+footerFontColor: white
+
+#The background color of the footer
+footerBackgroundColor: black
+footerBackgroundImage: /assets/img/bg/background.jpg
+
+#The list of pages on your website
+pageList:
+  - name: Home
+    url: /home.html/
+  - name: Past Events
+    url: /pastEvents.html/
+  - name: People
+    url: /people.html/
+
+collections:
+  events:
+    output: true
+  

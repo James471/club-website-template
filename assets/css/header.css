@@ -1,0 +1,27 @@
+div.line {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.navBar {
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+    margin-top: 0%;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.invisible {
+    visibility: hidden;
+}

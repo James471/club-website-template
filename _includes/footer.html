@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/assets/css/footer.css">
+{% if site.footerBackgroundImage != null %}
+    {% assign cls="bgImg" %}
+{% else %}
+    {% assign cls="bgColor" %}
+{% endif %}
+<section>
+    <footer class={{cls}} id="siteFooter">
+        <br>
+        <br>
+        Maintained by <a href="index.html" class="textLink">Astronomy Club-IISERM</a>
+        <br>
+        Theme built by <a href="https://github.com/James471" class="textLink">James</a>
+        <br>
+        Website built by <a href="https://github.com/James471" class="textLink">James</a>
+        <br>
+        Hosted on Github Pages.
+        <br>
+        {% include socialLinks.html %}
+    </footer>
+</section>

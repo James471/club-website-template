@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/assets/css/socialLinks.css">
+<div class="row">
+    {%for link in site.data.social%}
+        {%if link.url != null%}
+            <div class="column">
+                <div class="imgLink">
+                    <a href="{{link.url}}">
+                        <img src="{{link.img}}">
+                    </a>
+                </div>
+            </div>
+        {%endif%}
+    {%endfor%}
+</div>
