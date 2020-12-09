@@ -10,7 +10,7 @@ highlightsFont: Arial, Helvetica, sans-serif
 highlightsFontColor: rgb(255,255,0)
 
 #Hyperlink font color
-hyperlinkFontColor:
+hyperlinkFontColor: white
 
 #Font color of the event name as displayed on this page
 eventNameFontColor:

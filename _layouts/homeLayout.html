@@ -4,8 +4,9 @@
         <title>{{site.title}}</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/assets/css/animation.css">
         <style>
-            .bgImg {
+            .bgImgDesc {
                 background-image: url('{{page.descBackgroundImage}}');
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -13,7 +14,7 @@
                 padding: 0px;
             }
 
-            .bgColor {
+            .bgColorDesc {
                 background-color: {{page.descBackgroundColor}};
             }
 
@@ -75,6 +76,16 @@
                 display: table;
             }
 
+            .highlightsBgImg {
+                background-image: url('{{page.highlightBackgroundImage}}');
+                width: 100%;
+                background-repeat: repeat-y;
+            }
+
+            .highlightsBgColor {
+                background-color: {{page.highlightsBackgroundColor}};
+            }
+
             .event {
                 display: table-row;
                 margin-right: 6px;
@@ -86,16 +97,27 @@
                 color: {{page.fontColorEventName}};
                 text-decoration: underline;
             }
+
+            table, th, td {
+                border: 1px solid;
+                border-color: {{page.highlightsFontColor}};
+                border-collapse: collapse;
+                padding: 4px;
+            }
+
+            table {
+                width: 55%;
+            }
             
         </style>
         <script src="/js/homePage.js"></script>
     </head>
-    <body onload="cleanUp()">
+    <body onload="cleanUp()" class="animated fadeIn">
         {% include header.html %}
         {% if page.descBackgroundImage != null %}
-            {% assign cls="bgImg" %}
+            {% assign cls="bgImgDesc" %}
         {% else %}
-            {% assign cls="bgColor" %}
+            {% assign cls="bgColorDesc" %}
         {% endif %}
         <div class={{cls}}>
             <div class="welcomeMsg">
@@ -115,7 +137,12 @@
                 {% assign extension = event.path | split: "." | last %}
                 {% assign fileName = event.path | split: "/" | last | split: "." | first %}
                 {% assign id = event.homeVisibilityFrom | append: ":" | append: event.homeVisibilityTill | append: fileName %}
-                {%if date >= event.homeVisibilityFrom and date <= event.homeVisibilityTill and extension == "markdown" %}
+                {%if date >= event.homeVisibilityFrom and date <= event.homeVisibilityTill and extension == "markdown" and event.displayOnHome %}
+                    /*TODO: What to do if there is no poster */
+                    /* TODO: Media Query */
+                    /* TODO: Make tables decent */
+                    /* Set a background for this section */
+                    /* You need to make the table width 90% on mobile screen */
                     <section id="{{id}}" class="event invisible">
                         <img src="{{event.poster}}" class="eventPoster">
                         <div>

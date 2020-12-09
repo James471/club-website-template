@@ -9,7 +9,8 @@ title: An example event
 #The year of the event. It will be used for grouping on the past events page.
 year: 2020
 
-#If it's a competitive event, specify the path of
+#Set this to 'true' if you want it to appear on the home page. Don't use quotes around true. You can set this to false if this event is a part of a week event and doesn't have to appear on the home page.
+displayOnHome: true
 
 #Visible on home page from DD-MM-YYYY
 homeVisibilityFrom: 08-12-2020
@@ -17,27 +18,8 @@ homeVisibilityFrom: 08-12-2020
 #Visible on home page till DD-MM-YYYY
 homeVisibilityTill: 10-12-2020
 
-#Whether it is a standalone event or a week event. Use keywords 'standalone' or 'week' without quotes and in lowercase only.
-#If this particular event is a part of a week event, mention 'standalone'. You have to use 'week' only if you are creating a general
-#page for the week where you put the schedule and the poster.
-type: standalone
-
-#Set this to 'true' if this event is a part of a week else 'false'. Don't use quotes. Set it to false it this page is the description 
-#of the week itself.
-partOfWeek: false
-
-#If it's a competitive event, and you want the name of the winners displayed, type the path to the winners csv file.
-#A sample of the csv file has been provided.
-winners:
-
-#The schedule for the week. It will be used only if the type is 'week'. Here, you have to provide the path to a csv file.
-#The schedule will be displayed at the bottom. You can write 'no' here if you don't want the schedule to be displayed. Don't put quotes.
-#Leave empty if this isn't a week event.
-#A sample of the schedule file has been provided.
-schedule:
-
 #The path of the poster to be displayed on the left of the description on large screens. On small screens, it will be shown above the
-#description. Leave empty if there is no poster.s
+#description. Leave empty if there is no poster.
 poster: /assets/img/main.png
 
 #The font of everything displayed on this page. This font will be overridden when this file is rendered on the home page.
@@ -79,7 +61,7 @@ We hope you all will enjoy it!
 
 | Event Name            | Day                                | Time          | Prizes worth | Website Link                        |
 | --------------------- | ---------------------------------- | ------------- | ------------ | ----------------------------------- |
-| Webinar - Dr. Rulands | Monday, 17th August                | 5pm           | -            | [/ruland](ruland)                   |                
+| Webinar - Dr. Rulands | Monday, 17th August                | 5pm           | -            | [/ruland](/events/ruland)            |                
 | Code The Matrix       | Tuesday, 18th August               | 8pm - 12pm    | 1200         | [/code-the-matrix](code-the-matrix) |
 | ELI5                  | Saturday 23rd August(Final Date)   | 11:59 pm      | 700          | [/eli5](eli5)                       |
 | Particle in a Box     | Friday, 21st August                | 4pm - 8 pm    | 700          | [/piab](piab)                       |
