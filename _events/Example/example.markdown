@@ -12,6 +12,12 @@ year: 2020
 #Set this to 'true' if you want it to appear on the home page. Don't use quotes around true. You can set this to false if this event is a part of a week event and doesn't have to appear on the home page.
 displayOnHome: true
 
+#Set this to 'true' without quotes if this event is a part of a week. Set to 'false' if it isn't or if it is the description of the week itself.
+partOfWeek: false
+
+#Be kind to the developer( I know I shouldn't be asking you for this variable ). Provide the link to this page and end the name of the file with .html
+linkToThisPage: /events/Example/example.html
+
 #Visible on home page from DD-MM-YYYY
 homeVisibilityFrom: 08-12-2020
 

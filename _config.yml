@@ -36,6 +36,10 @@ footerFontColor: white
 footerBackgroundColor: black
 footerBackgroundImage: /assets/img/bg/background.jpg
 
+#The background for each event page
+eventPageBackgroundImage: 
+eventPageBackgroundColor:
+
 #The list of pages on your website
 pageList:
   - name: Home

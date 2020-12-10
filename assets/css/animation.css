@@ -1,4 +1,4 @@
-.animated {
+.animated1 {
     -webkit-animation-duration: 6s;
     animation-duration: 6s;
     -webkit-animation-fill-mode: both;
@@ -18,4 +18,24 @@
 .fadeIn {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
+}
+
+@keyframes slideRight {
+    0% {left: -100px; opacity: 0; position: absolute;}
+    100% {left: 0px; opacity: 1; position: absolute;}
+}
+
+@-webkit-keyframes slideRight {
+    0% {left: -100px; opacity: 0; position: absolute;}
+    100% {left: 0px; opacity: 1; position: absolute;}
+}
+
+.animated2 {
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+}
+
+.slideRight {
+    animation-name: slideRight;
+    -webkit-animation-name: slideRight;
 }

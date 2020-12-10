@@ -108,54 +108,70 @@
             table {
                 width: 55%;
             }
+
+            
+            #page-container {
+                position: relative;
+                min-height: 100vh;
+            }
+
+            #content-wrap {
+                padding-bottom: 8.5rem;    /* Footer height */
+            }
             
         </style>
         <script src="/js/homePage.js"></script>
     </head>
-    <body onload="cleanUp()" class="animated fadeIn">
-        {% include header.html %}
-        {% if page.descBackgroundImage != null %}
-            {% assign cls="bgImgDesc" %}
-        {% else %}
-            {% assign cls="bgColorDesc" %}
-        {% endif %}
-        <div class={{cls}}>
-            <div class="welcomeMsg">
-                <br>
-                <br>
-                {{content}}
-                <br>
-                <br>
-            </div>
-        </div>
-        <section>
-            <h2 class="highlights upcoming">Highlights</h2>
-        </section>
-        <section class="upcoming">
-            {% assign date = site.time | date: "%d-%m-%Y" %}
-            {% for event in site.events %}
-                {% assign extension = event.path | split: "." | last %}
-                {% assign fileName = event.path | split: "/" | last | split: "." | first %}
-                {% assign id = event.homeVisibilityFrom | append: ":" | append: event.homeVisibilityTill | append: fileName %}
-                {%if date >= event.homeVisibilityFrom and date <= event.homeVisibilityTill and extension == "markdown" and event.displayOnHome %}
-                    /*TODO: What to do if there is no poster */
-                    /* TODO: Media Query */
-                    /* TODO: Make tables decent */
-                    /* Set a background for this section */
-                    /* You need to make the table width 90% on mobile screen */
-                    <section id="{{id}}" class="event invisible">
-                        <img src="{{event.poster}}" class="eventPoster">
-                        <div>
-                            <h2 class="eventName">{{event.title}}</h2>
-                            {{event.content | markdownify}}
-                        </div>
-                    </section>
+    <body onload="cleanUp()" class="animated1 fadeIn">
+        <div id="page-container">
+            <div id="content-wrap">
+                {% include header.html %}
+                {% if page.descBackgroundImage != null %}
+                    {% assign cls="bgImgDesc" %}
+                {% else %}
+                    {% assign cls="bgColorDesc" %}
                 {% endif %}
-            {% endfor %}
-        </section>
-        <section>
-            <h3 style="text-align: center;" id="noHiglightsMsg">We haven't conspired anything lately.</h3>
-        </section>
-        {% include footer.html %}
+                <div class={{cls}}>
+                    <div class="welcomeMsg">
+                        <br>
+                        <br>
+                        {{content}}
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <section>
+                    <h2 class="highlights upcoming">Highlights</h2>
+                </section>
+                <section class="upcoming">
+                    {% assign date = site.time | date: "%d-%m-%Y" %}
+                    {% for event in site.events %}
+                        {% assign extension = event.path | split: "." | last %}
+                        {% assign fileName = event.path | split: "/" | last | split: "." | first %}
+                        {% assign id = event.homeVisibilityFrom | append: ":" | append: event.homeVisibilityTill | append: fileName %}
+                        {%if date >= event.homeVisibilityFrom and date <= event.homeVisibilityTill and extension == "markdown" and event.displayOnHome %}
+                            /*TODO: What to do if there is no poster */
+                            /* TODO: Media Query */
+                            /* TODO: Make tables decent */
+                            /* Set a background for this section */
+                            /* You need to make the table width 90% on mobile screen */
+                            <section id="{{id}}" class="event invisible">
+                                <img src="{{event.poster}}" class="eventPoster">
+                                <div>
+                                    <h2 class="eventName">{{event.title}}</h2>
+                                    <div style="font-size: 1em;">
+                                        {{event.content | markdownify}}
+                                    </div>
+                                </div>
+                            </section>
+                        {% endif %}
+                    {% endfor %}
+                </section>
+                <section>
+                    <h3 style="text-align: center;" id="noHiglightsMsg">We haven't conspired anything lately.</h3>
+                </section>
+            </div>
+            {% include footer.html %}
+        </div>
     </body>
 </html>
