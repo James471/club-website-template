@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{site.title}}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/assets/css/animation.css">
+        <style>
+            #page-container {
+                position: relative;
+                min-height: 100vh;
+            }
+
+            #content-wrap {
+                padding-bottom: 8.5rem;
+            }
+
+            .personDesc {
+                margin-left: 10%;
+                text-align: left;
+            }
+
+            .column {
+                float: left;
+                padding: 10px;
+                height: 40px;
+            }
+
+            .left {
+               width: 35%;
+            }
+
+            .right {
+                width: 65%;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            @media screen and (max-width: 600px) {
+                .column {
+                    width: 100%;
+                }
+            }
+
+            .pageFont {
+                font-family: "{{page.font}}";
+                color: {{page.fontColor}};
+            }
+
+            .peopleBgImg {
+                background-image: url('page.backgroundImage');
+                background-position: cover;
+            }
+
+            .peopleBgColor {
+                background-color: {{page.backgroundColor}};
+            }
+
+        </style>
+    </head>
+    <body style="background-color: {{page.pageBackgroundColor}};">
+        <div id="page-container">
+            <div id="content-wrap">
+                {% include header.html %}
+                {% if page.backgroundImage != null %}
+                    {% assign cls = "peopleBgImg" %}
+                {% else %}
+                    {% assign cls = "peopleBgColor" %}
+                {% endif %}
+                <section class="animated1 fadeIn pageFont {{cls}}">
+                    {% for person in site.data.people %}
+                        <div class="row">
+                            <img src="{{person.imageURL}}" style="height: 300px; width: 300px" class="column left">
+                            <div class="column right personDesc">
+                                <p>Name: {{person.name}}</p>
+                                <p>Role: {{person.role}}</p>
+                                <p>Post Held During: {{person.postHeldDuring}}</p>
+                            </div>
+                        </div>
+                        <hr>
+                    {% endfor %}
+                </section>
+            </div>
+            {% include footer.html %}
+        </div>
+    </body>
+</html>

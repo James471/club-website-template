@@ -7,6 +7,7 @@ pastEventsBackgroundImage:
 pastEventsBackgroundColor:
 
 #The background of the whole page. It fills up empty gaps.
+pastEventsPageBackGroundColor:
 
 #The font of the heading 'Past Events'
 headingFont:
