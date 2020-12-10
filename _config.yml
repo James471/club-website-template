@@ -41,10 +41,10 @@ eventPageBackgroundImage:
 eventPageBackgroundColor:
 
 #The font for each event page
-eventPageBackgroundHeadingFont:
-eventPageBackgroundHeadingFontColor:
-eventPageBackgroundOtherFont:
-eventPageBackgroundOtherFontColor:
+eventPageHeadingFont:
+eventPageHeadingFontColor:
+eventPageOtherFont:
+eventPageOtherFontColor:
 
 #The list of pages on your website
 pageList:

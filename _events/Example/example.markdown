@@ -28,18 +28,10 @@ homeVisibilityTill: 10-12-2020
 #description. Leave empty if there is no poster.
 poster: /assets/img/main.png
 
-#The font of everything displayed on this page. This font will be overridden when this file is rendered on the home page.
-headingFont: 
-headingFontColor:
-headingFontSize:
-otherFont:
-otherFontColor:
-otherFontSize:
-
 #Leave these untouched unless you know what you are doing.
 #The excerpt_separator can be used in a later version. Please don't change its value. Consider it a TM.
 excerpt_separator: <!--J69-->
-layout: events
+layout: eventsLayout
 ---
 # Hello, Scions of Newton!
 

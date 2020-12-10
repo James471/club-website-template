@@ -116,7 +116,7 @@
             }
 
             #content-wrap {
-                padding-bottom: 8.5rem;    /* Footer height */
+                padding-bottom: 8.5rem;
             }
             
         </style>
@@ -150,11 +150,8 @@
                         {% assign fileName = event.path | split: "/" | last | split: "." | first %}
                         {% assign id = event.homeVisibilityFrom | append: ":" | append: event.homeVisibilityTill | append: fileName %}
                         {%if date >= event.homeVisibilityFrom and date <= event.homeVisibilityTill and extension == "markdown" and event.displayOnHome %}
-                            /*TODO: What to do if there is no poster */
                             /* TODO: Media Query */
-                            /* TODO: Make tables decent */
                             /* Set a background for this section */
-                            /* You need to make the table width 90% on mobile screen */
                             <section id="{{id}}" class="event invisible">
                                 <img src="{{event.poster}}" class="eventPoster">
                                 <div>
