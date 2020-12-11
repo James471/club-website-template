@@ -1,5 +1,5 @@
 #The title appears on the first page
-title: The Astronomy Club
+title: The Club
 
 #The logo appears as a small circular image above the title
 logo: /assets/img/logo.png 
@@ -42,6 +42,13 @@ pageList:
     url: /pastEvents.html/
   - name: People
     url: /people.html/
+
+#This appears on the footer
+maintainedBy: club
+
+#This appears on the footer. Put the name of the website builder here.
+builtBy: James
+builtByURL: https://github.io/James471
 
 collections:
   events:

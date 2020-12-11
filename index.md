@@ -3,7 +3,7 @@
 layout: indexLayout
 
 #The description appears on the first page below the title
-description: Welcome Stargazer!
+description: Welcome Member!
 
 #The background of the front page
 indexBG: /assets/img/bg/background.jpg
