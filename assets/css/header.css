@@ -12,7 +12,7 @@ header {
 }
 
 .headerBgImg {
-    background-image: url('{{site.headerBackgroundImage}}');
+    background-image: url('{{site.headerBackgroundImage | prepend: site.baseurl}}');
     opacity: {{site.headerBackgroundImageOpacity}};
 }
 

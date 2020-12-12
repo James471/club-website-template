@@ -4,10 +4,10 @@
         <title>{{site.title}}</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/assets/css/animation.css">
+        <link rel="stylesheet" href="{{'/assets/css/animation.css' | prepend: site.baseurl}}">
         <style>
             .bgImgDesc {
-                background-image: url('{{page.descBackgroundImage}}');
+                background-image: url('{{page.descBackgroundImage | prepend: site.baseurl}}');
                 background-repeat: no-repeat;
                 background-size: cover;
                 width: 100%;
@@ -92,7 +92,7 @@
             }
 
             .highlightsBgImg {
-                background-image: url('{{page.highlightBackgroundImage}}');
+                background-image: url('{{page.highlightBackgroundImage | prepend: site.baseurl}}');
                 width: 100%;
                 background-repeat: repeat-y;
             }
@@ -135,7 +135,7 @@
             }
 
             .upcomingBgImg {
-                background-image: url('{{page.highlightsBackgroundImage}}');
+                background-image: url('{{page.highlightsBackgroundImage | prepend: site.baseurl}}');
                 background-attachment: fixed;
             }
 
@@ -144,7 +144,7 @@
             }
             
         </style>
-        <script src="/js/homePage.js"></script>
+        <script src="{{'/js/homePage.js' | prepend: site.baseurl}}"></script>
     </head>
     <body onload="cleanUp()" class="animated1 fadeIn">
         <div id="page-container">
@@ -181,7 +181,7 @@
                             {% assign id = event.homeVisibilityFrom | append: ":" | append: event.homeVisibilityTill | append: fileName %}
                             {%if date >= event.homeVisibilityFrom and date <= event.homeVisibilityTill and extension == "markdown" and event.displayOnHome %}
                                 <section id="{{id}}" class="event invisible">
-                                    <img src="{{event.poster}}" class="eventPoster">
+                                    <img src="{{event.poster | prepend: site.baseurl}}" class="eventPoster">
                                     <div class="responsiveEventContent">
                                         <h2 class="eventName">{{event.title}}</h2>
                                         <div style="font-size: 1em;">

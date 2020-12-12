@@ -23,7 +23,7 @@ footer {
 }
 
 .bgImgFooter {
-    background-image: url('{{site.footerBackgroundImage}}');
+    background-image: url('{{site.footerBackgroundImage | prepend: site.baseurl}}');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/assets/css/footer.css">
+<link rel="stylesheet" href="{{'/assets/css/footer.css' | prepend: site.baseurl }}">
 {% if site.footerBackgroundImage != null %}
     {% assign cls="bgImgFooter" %}
 {% else %}
@@ -7,7 +7,7 @@
 <section>
     <footer class={{cls}} id="siteFooter">
         <br>
-        Maintained by <a href="index.html" class="textLink">{{site.maintainedBy}}</a>
+        Maintained by <a href="{{'index.html' | prepend: site.baseurl }}" class="textLink">{{site.maintainedBy}}</a>
         <br>
         Theme built by <a href="https://github.com/James471" class="textLink">James</a>
         <br>
