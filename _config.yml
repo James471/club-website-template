@@ -1,5 +1,5 @@
 #Put the name of the repo as it is on github
-baseurl: club-website-template
+baseurl: /club-website-template
 
 #The title appears on the first page
 title: The Club
