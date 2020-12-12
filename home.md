@@ -32,5 +32,5 @@ descFont: Arial, Helvetica, sans-serif
 descFontColor: white
 descFontSize: 2em
 ---
-# The Astronomy Club
-We are people who look up at the sky in awe and wonder how that ecstatic world is sustained up there. We can be found stargazing and photographing the night sky, discussing cosmology, solving problems through coding and mathematics, conducting hackathons, organising talks on cutting edge research by some of the best scientists in the field and a lot more. So, attend our events and share the joys and wonders of the cosmos with us.
+# The Club
+Here goes your welcome message

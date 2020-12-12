@@ -10,9 +10,11 @@ headerFont:
 #The fontcolor of everything in the header
 headerFontColor:
 
-#The background of the header. If you want image, leave the headerBackgroundColor empty.
+#The background of the header. If you want image, leave the headerBackgroundColor empty and vice-versa
 headerBackgroundImage:
-headerBackgroundColor:
+headerBackgroundImageOpacity:
+headerActivePageButtonBackground:
+headerBackgroundColor: rgba(255,0,0,0.5)
 
 #The font for everything in the footer
 footerFont: Arial, Helvetica, sans-serif
@@ -37,11 +39,11 @@ eventPageOtherFontColor:
 #The list of pages on your website
 pageList:
   - name: Home
-    url: /home.html/
+    url: /home.html
   - name: Past Events
-    url: /pastEvents.html/
+    url: /pastEvents.html
   - name: People
-    url: /people.html/
+    url: /people.html
 
 #This appears on the footer
 maintainedBy: club

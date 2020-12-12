@@ -1,6 +1,6 @@
 .animated1 {
-    -webkit-animation-duration: 6s;
-    animation-duration: 6s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
