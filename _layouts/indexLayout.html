@@ -5,11 +5,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <link rel="stylesheet" href="{{'/assets/css/animation.css' | prepend: site.baseurl}}">
+    <link rel="stylesheet" href="/assets/css/animation.css">
     <style>
 
         html.index { 
-            background: url('{{page.indexBG | prepend: site.baseurl}}') no-repeat center center fixed; 
+            background: url('{{page.indexBG}}') no-repeat center center fixed; 
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -60,12 +60,12 @@
     </style>
     <body>
         <div class="animated1 fadeIn centerize">
-            <img src="{{site.logo | prepend: site.baseurl}}" class="logo">
+            <img src="{{site.logo}}" class="logo">
             <h1>{{site.title}}</h1>
             <h2>{{page.description}}</h2>
             <br>
             {%for pg in site.pageList%}
-                <a href="{{pg.url | prepend: site.baseurl}}" class="pages">{{pg.name}}</a>
+                <a href="{{pg.url}}" class="pages">{{pg.name}}</a>
                 <br>
             {%endfor%}
             <br>

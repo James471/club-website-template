@@ -16,7 +16,7 @@
             }
 
             .eventBackgroundImg {
-                background-image: url('{{site.eventPageBackgroundImage | prepend: site.baseurl}}');
+                background-image: url('site.eventPageBackgroundImage');
             }
 
             .eventBackgroundColor {
@@ -88,7 +88,7 @@
             <div id="content-wrap">
             {% include header.html %}
             <section class="content event">
-                <img src="{{page.poster | prepend: site.baseurl}}" class="eventPoster">
+                <img src="{{page.poster}}" class="eventPoster">
                 <div class="responsiveEventContent">
                     <div style="font-size: 1em;">
                         {{content}}

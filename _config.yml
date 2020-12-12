@@ -1,6 +1,3 @@
-#Put the name of the repo as it is on github
-baseurl: club-website-template
-
 #The title appears on the first page
 title: The Club
 
@@ -53,7 +50,7 @@ maintainedBy: club
 
 #This appears on the footer. Put the name of the website builder here.
 builtBy: me
-builtByURL: https://github.io/hopefullyDoesntExist
+builtByURL: https://github.io/hopefullDoesntExist
 
 collections:
   events:

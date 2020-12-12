@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="{{'/assets/css/header.css' | prepend: site.baseurl }}">
+<link rel="stylesheet" href="/assets/css/header.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="{{'/js/navigation.js' | prepend: site.baseurl }}"></script>
+<script src="/js/navigation.js"></script>
 {% if site.headerBackgroundImage != null %}
     {% assign headerBgClass = "headerBgImg" %}
 {% else %}
@@ -10,9 +10,9 @@
     <div class="topnav" id="myTopnav">
         {% for pg in site.pageList %}
             {% if pg.url == page.url %}
-                <a href="{{ pg.url | prepend: site.baseurl }}" class="active">{{pg.name}}</a>
+                <a href="{{pg.url}}" class="active">{{pg.name}}</a>
             {% else %}
-                <a href="{{ pg.url | prepend: site.baseurl }}">{{pg.name}}</a>
+                <a href="{{pg.url}}">{{pg.name}}</a>
             {% endif %}
         {% endfor %}
         <a href="javascript:void(0)" class="icon" onclick="handleButtonClick()">
