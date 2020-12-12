@@ -43,8 +43,8 @@ This theme has 5 layouts and 3 includes.
 3. socialLinks.html &rarr; It contains the links to various social media/github pages of your club. It's included by the footer to display the links. You can add/remove/update these links in ```_data/social.yml```
 
 ### Assets
-1. Some of the clubs don't have a logo. So, we have provided ```/assets/img/logo.png``` which is a transparent image. You can use it or provide a logo for your club. This logo will appear above the club name on the front page.
-2. Icons for several social media sites have been provided in ```/assets/img/social/``` for use in socialLinks.html
+1. Some of the clubs don't have a logo. So, we have provided ```assets/img/logo.png``` which is a transparent image. You can use it or provide a logo for your club. This logo will appear above the club name on the front page.
+2. Icons for several social media sites have been provided in ```assets/img/social/``` for use in socialLinks.html
 
 So, all in all, you have to edit the following files
 1. ```_config.yml```
