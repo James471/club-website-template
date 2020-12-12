@@ -24,7 +24,7 @@ footerFontColor: white
 
 #The background color of the footer
 footerBackgroundColor: black
-footerBackgroundImage: assets/img/bg/background.jpg
+footerBackgroundImage: /assets/img/bg/background.jpg
 
 #The background for each event page
 eventPageBackgroundImage: 
