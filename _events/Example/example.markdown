@@ -22,7 +22,7 @@ linkToThisPage: /events/Example/example.html
 homeVisibilityFrom: 08-12-2020
 
 #Visible on home page till DD-MM-YYYY
-homeVisibilityTill: 10-12-2020
+homeVisibilityTill: 12-12-2020
 
 #The path of the poster to be displayed on the left of the description on large screens. On small screens, it will be shown above the
 #description. Leave empty if there is no poster.
