@@ -1,4 +1,4 @@
-#Put the name of the repo as it is on github
+#Put the name of the repo as it is on github. Comment this variable when you are testing locally. Uncomment before pushing to github.
 baseurl: /club-website-template
 
 #The title appears on the first page
