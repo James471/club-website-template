@@ -39,11 +39,11 @@ eventPageOtherFontColor:
 #The list of pages on your website
 pageList:
   - name: Home
-    url: /home.html
+    url: home.html
   - name: Past Events
-    url: /pastEvents.html
+    url: pastEvents.html
   - name: People
-    url: /people.html
+    url: people.html
 
 #This appears on the footer
 maintainedBy: club

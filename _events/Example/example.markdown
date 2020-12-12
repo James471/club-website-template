@@ -16,7 +16,7 @@ displayOnHome: true
 partOfWeek: false
 
 #Be kind to the developer( I know I shouldn't be asking you for this variable ). Provide the link to this page and end the name of the file with .html
-linkToThisPage: /events/Example/example.html
+linkToThisPage: events/Example/example.html
 
 #Visible on home page from DD-MM-YYYY
 homeVisibilityFrom: 08-12-2020
@@ -59,11 +59,11 @@ We hope you all will enjoy it!
 
 | Event Name            | Day                                | Time          | Prizes worth | Website Link                        |
 | --------------------- | ---------------------------------- | ------------- | ------------ | ----------------------------------- |
-| Webinar - Dr. Rulands | Monday, 17th August                | 5pm           | -            | [/ruland](/events/ruland)            |                
-| Code The Matrix       | Tuesday, 18th August               | 8pm - 12pm    | 1200         | [/code-the-matrix](code-the-matrix) |
-| ELI5                  | Saturday 23rd August(Final Date)   | 11:59 pm      | 700          | [/eli5](eli5)                       |
-| Particle in a Box     | Friday, 21st August                | 4pm - 8 pm    | 700          | [/piab](piab)                       |
-| Treasure Hunt         | To be decided                      | 6pm onwards   | 1200         | [/thunt](thunt)                     |
-| Meme Making           | 23rd August (Final Date)           | 11:59 pm      | 300          | [/memes](memes)                     |
-| Tee Shirt Designing   | 23rd August (Final Date)           | 11:59 pm      | Free T-Shirt | [/tees](tees)                       |
-| Frame It!             | Visit Website                      | Visit Website | 300 * 2      | [/frame-it](frame-it)               |
+| Webinar - Dr. Rulands | Monday, 17th August                | 5pm           | -            | [ruland](events/ruland)            |                
+| Code The Matrix       | Tuesday, 18th August               | 8pm - 12pm    | 1200         | [code-the-matrix](code-the-matrix) |
+| ELI5                  | Saturday 23rd August(Final Date)   | 11:59 pm      | 700          | [eli5](eli5)                       |
+| Particle in a Box     | Friday, 21st August                | 4pm - 8 pm    | 700          | [piab](piab)                       |
+| Treasure Hunt         | To be decided                      | 6pm onwards   | 1200         | [thunt](thunt)                     |
+| Meme Making           | 23rd August (Final Date)           | 11:59 pm      | 300          | [memes](memes)                     |
+| Tee Shirt Designing   | 23rd August (Final Date)           | 11:59 pm      | Free T-Shirt | [tees](tees)                       |
+| Frame It!             | Visit Website                      | Visit Website | 300 * 2      | [frame-it](frame-it)               |
