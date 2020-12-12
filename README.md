@@ -26,7 +26,7 @@ Or install it yourself as:
 
 ## Usage
 
-This theme has got 5 layouts and 3 includes.
+This theme has 5 layouts and 3 includes.
 
 ### Available layouts
 
@@ -37,7 +37,7 @@ This theme has got 5 layouts and 3 includes.
 5. pastEventsLayout.html &rarr; It's the archive of all the events conducted by your club. It can be customized in the front matter of pastEvents.md. It automatically lists your posts from the _events  folder. You can have subfolders in _events for organization purposes. It won't have any effect on the code.
 6. peopleLayout.html &rarr; It lists the names and a photograph of each convenor/co-convenor/anyone who has held any role in the past. It can be customised in the front matter of people.md. In order to add the names of more people, head to _data/people.yml
 
-### Include
+### Includes
 1. header.html &rarr; It's the header which appears on every page of your website except the front page. It's font and background can be customised in _config.yml
 2. footer.html &rarr; It's the footer which appears on every page of your website except the front page. It's font and background can be customised in _config.yml. The social media links are included from socialLinks.html
 3. socialLinks.html &rarr; It contains the links to various social media/github pages of your club. It's included by the footer to display the links. You can add/remove/update these links in ```_data/social.yml```
