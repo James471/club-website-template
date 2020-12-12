@@ -31,16 +31,16 @@ This theme has got 5 layouts and 3 includes.
 ### Available layouts
 
 **Move to the markdown files as mentioned in the description of each layout below for further instructions on customization. You don't need to change any of the layout files. Just change their markdown files.**
-1. indexLayout.html &larr; It is the front page your website. The name of your club, its logo and the links to other pages can be customized in _config.yml while the background and fonts can be changed in the front matter of home.md. For customizing the social links, see the includes section.
-3. homeLayout.html &larr; It is the home page of your website. All the customization for this page except the header and footer can be made in the front matter of home.md
-4. eventsLayout.html &larr; It is used by all the events. The font and background can be customized in _config.yml. A sample markdown file for an example event is provided in _events/Example. It contains further details.
-5. pastEventsLayout.html &larr; It's the archive of all the events conducted by your club. It can be customized in the front matter of pastEvents.md. It automatically lists your posts from the _events  folder. You can have subfolders in _events for organization purposes. It won't have any effect on the code.
-6. peopleLayout.html &larr; It lists the names and a photograph of each convenor/co-convenor/anyone who has held any role in the past. It can be customised in the front matter of people.md. In order to add the names of more people, head to _data/people.yml
+1. indexLayout.html &rarr; It is the front page your website. The name of your club, its logo and the links to other pages can be customized in _config.yml while the background and fonts can be changed in the front matter of home.md. For customizing the social links, see the includes section.
+3. homeLayout.html &rarr; It is the home page of your website. All the customization for this page except the header and footer can be made in the front matter of home.md
+4. eventsLayout.html &rarr; It is used by all the events. The font and background can be customized in _config.yml. A sample markdown file for an example event is provided in _events/Example. It contains further details.
+5. pastEventsLayout.html &rarr; It's the archive of all the events conducted by your club. It can be customized in the front matter of pastEvents.md. It automatically lists your posts from the _events  folder. You can have subfolders in _events for organization purposes. It won't have any effect on the code.
+6. peopleLayout.html &rarr; It lists the names and a photograph of each convenor/co-convenor/anyone who has held any role in the past. It can be customised in the front matter of people.md. In order to add the names of more people, head to _data/people.yml
 
 ### Include
-1. header.html &larr; It's the header which appears on every page of your website except the front page. It's font and background can be customised in _config.yml
-2. footer.html &larr; It's the footer which appears on every page of your website except the front page. It's font and background can be customised in _config.yml. The social media links are included from socialLinks.html
-3. socialLinks.html &larr; It contains the links to various social media/github pages of your club. It's included by the footer to display the links. You can add/remove/update these links in ```_data/social.yml```
+1. header.html &rarr; It's the header which appears on every page of your website except the front page. It's font and background can be customised in _config.yml
+2. footer.html &rarr; It's the footer which appears on every page of your website except the front page. It's font and background can be customised in _config.yml. The social media links are included from socialLinks.html
+3. socialLinks.html &rarr; It contains the links to various social media/github pages of your club. It's included by the footer to display the links. You can add/remove/update these links in ```_data/social.yml```
 
 ### Assets
 1. Some of the clubs don't have a logo. So, we have provided ```/assets/img/logo.png``` which is a transparent image. You can use it or provide a logo for your club. This logo will appear above the club name on the front page.
