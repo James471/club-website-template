@@ -110,7 +110,7 @@
                                 {% assign partOfWeekList = partOfWeekList | append: event. partOfWeek | append: "," %}
                                 {% assign urlList = urlList | append: event.linkToThisPage | append: "," %}
                             {% endfor %}
-                            <li class="year" onclick="toggleEventList('{{liId}}', '{{btnId}}', '{{eventList}}', '{{partOfWeekList}}', '{{urlList}}')">
+                            <li class="year" onclick="toggleEventList('{{liId}}', '{{btnId}}', '{{eventList}}', '{{partOfWeekList}}', '{{urlList}}', '{{site.baseurl}}')">
                                 <span style="font-size: 1.2em;">
                                     {{group.name}}
                                     <div class="button expandButton" id={{btnId}}>

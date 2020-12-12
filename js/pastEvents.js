@@ -1,4 +1,4 @@
-function toggleEventList(liId, btnId, eventList, partOfWeekList, urlList) {
+function toggleEventList(liId, btnId, eventList, partOfWeekList, urlList, baseUrl) {
     var button = document.getElementById(btnId);
     var liDiv = document.getElementById(liId);
     if (button.classList.contains('expandButton')) {
@@ -8,7 +8,7 @@ function toggleEventList(liId, btnId, eventList, partOfWeekList, urlList) {
         var htmlli="" ;
         for(var i = 0; i < eventList.length; i++) {
             if (partOfWeekList[i] == 'false') {
-                htmlli += `<li><a href=`+urlList[i]+` class="eventListElement">`+eventList[i]+`</a></li>`;
+                htmlli += `<li><a href=`+baseUrl+urlList[i]+` class="eventListElement">`+eventList[i]+`</a></li>`;
             }
         }
         liDiv.innerHTML = `<ul>`+htmlli+`</ul>`;
