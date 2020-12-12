@@ -24,7 +24,7 @@ highlightsBackgroundColor:
 
 #The background for the club description message on this page. If you don't want color and are going to use image, leave the color
 #empty.
-descBackgroundImage: assets/img/bg/background.jpg
+descBackgroundImage: /assets/img/bg/background.jpg
 descBackgroundColor:
 
 #The font of the description which you have written in this file.

@@ -6,7 +6,7 @@ layout: indexLayout
 description: Welcome Member!
 
 #The background of the front page
-indexBG: assets/img/bg/background.jpg
+indexBG: /assets/img/bg/background.jpg
 
 #The text color for the club name(i.e. the title). You can give the color in rgb too.
 clubNameColor: white

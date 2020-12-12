@@ -16,7 +16,7 @@ displayOnHome: true
 partOfWeek: false
 
 #Be kind to the developer( I know I shouldn't be asking you for this variable ). Provide the link to this page and end the name of the file with .html
-linkToThisPage: events/Example/example.html
+linkToThisPage: /events/Example/example.html
 
 #Visible on home page from DD-MM-YYYY
 homeVisibilityFrom: 08-12-2020
@@ -26,7 +26,7 @@ homeVisibilityTill: 12-12-2020
 
 #The path of the poster to be displayed on the left of the description on large screens. On small screens, it will be shown above the
 #description. Leave empty if there is no poster.
-poster: assets/img/main.png
+poster: /assets/img/main.png
 
 #Leave these untouched unless you know what you are doing.
 #The excerpt_separator can be used in a later version. Please don't change its value. Consider it a TM.
