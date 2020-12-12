@@ -44,6 +44,21 @@
             table {
                 width: 55%;
             }
+
+            @media screen and (max-width: 600px) {
+                body .eventPoster {
+                    width: 80%;
+                    height: 60%;
+                    padding: 4px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                .responsiveEventContent {
+                    display: table-row;
+                }
+
+            }
             
             .eventPoster {
                 float: left;
@@ -54,13 +69,6 @@
                 margin-left: 6px;
                 margin-right: 6px;
                 margin-bottom: 6px;
-            }
-
-            @media screen and (max-width: 600px;) {
-                width: 80%;
-                height: 60%;
-                padding: 4px;;
-                margin: 4px;
             }
 
             .event {
@@ -82,7 +90,7 @@
             {% include header.html %}
             <section class="content event">
                 <img src="{{page.poster}}" class="eventPoster">
-                <div>
+                <div class="responsiveEventContent">
                     <div style="font-size: 1em;">
                         {{content}}
                     </div>
