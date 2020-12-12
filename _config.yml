@@ -49,8 +49,8 @@ pageList:
 maintainedBy: club
 
 #This appears on the footer. Put the name of the website builder here.
-builtBy: James
-builtByURL: https://github.io/James471
+builtBy: me
+builtByURL: https://github.io/hopefullDoesntExist
 
 collections:
   events:
