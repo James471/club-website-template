@@ -36,8 +36,12 @@
             color: {{page.indexFontColor}};
         }
 
-        a.pages:hover {
-            font-size: 2.1em;
+        .grow { 
+            transition: all .2s ease-in-out; 
+        }
+
+        .grow:hover { 
+            transform: scale(1.1); 
         }
 
         .logo {
@@ -65,8 +69,10 @@
             <h2>{{page.description}}</h2>
             <br>
             {%for pg in site.pageList%}
-                <a href="{{pg.url | prepend: site.baseurl}}" class="pages">{{pg.name}}</a>
-                <br>
+                <div class="grow" style="padding-top: 4px; padding-bottom: 4px; width: max-content; margin: 0 auto;">
+                    <a href="{{pg.url | prepend: site.baseurl}}" class="pages">{{pg.name}}</a>
+                    <br>
+                </div>
             {%endfor%}
             <br>
             {% include socialLinks.html%}
