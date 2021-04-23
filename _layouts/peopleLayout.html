@@ -16,20 +16,32 @@
                 padding-bottom: 8.5rem;
             }
 
-            .row {
-                display: flex;
+            .cf:before, .cf:after {
+                content: " ";
+                display: table;
             }
 
-            .first-column {
-                width: 40%;
-                padding: 0 10px 0 0;
+            .cf:after {
+                clear: both;
+            }
+
+            .cf {
+                *zoom: 1;
+            }
+
+            .fl {
                 float: left;
+                _display: inline;
             }
 
-            .second-column {
-                width: 60%;
-                padding: 0 10px 0 0;
-                float: right;
+            .w-100 {
+                width: 100%;
+            }
+
+            @media screen and (min-width: 30em) {
+                .w-50-ns {
+                    width: 50%;
+                }
             }
 
             .personDesc {
@@ -65,14 +77,16 @@
                 <hr>
                 <section class="animated1 fadeIn pageFont {{cls}}">
                     {% for person in site.data.people %}
-                        <div class="row">
-                            <img src="{{person.imageURL | prepend: site.baseurl}}" style="height: 400px; width: 400px;" class="first-column">
-                            <div class="second-column personDesc">
+                        <article class="cf">
+                            <div class="fl w-100 w-50-ns">
+                                <img src="{{person.imageURL | prepend: site.baseurl}}" style="height: 400px; width: 400px;">
+                            </div>
+                            <div class="fl w-100 w-50-ns">
                                 <p>Name: {{person.name}}</p>
                                 <p>Role: {{person.role}}</p>
                                 <p>Post Held During: {{person.postHeldDuring}}</p>
                             </div>
-                        </div>
+                        </article>
                         <hr>
                     {% endfor %}
                 </section>

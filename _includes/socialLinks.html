@@ -1,14 +1,16 @@
 <link rel="stylesheet" href="{{ '/assets/css/socialLinks.css' | prepend: site.baseurl }}">
-<div class="row">
-    {%for link in site.data.social%}
-        {%if link.url != null%}
-            <div class="column">
-                <div class="imgLink">
-                    <a href="{{link.url  | prepend: site.baseurl }}" target="_blank">
-                        <img src="{{link.img  | prepend: site.baseurl }}">
-                    </a>
+<div style="margin-top: 8%;">
+    <div class="row">
+        {%for link in site.data.social%}
+            {%if link.url != null%}
+                <div class="column">
+                    <div>
+                        <a href="{{link.url  | prepend: site.baseurl }}" target="_blank" height="40px" width="40px">
+                            <img src="{{link.img  | prepend: site.baseurl }}" class="imgLink">
+                        </a>
+                    </div>
                 </div>
-            </div>
-        {%endif%}
-    {%endfor%}
+            {%endif%}
+        {%endfor%}
+    </div>
 </div>
