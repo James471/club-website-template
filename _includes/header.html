@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="{{'/assets/css/header.css' | prepend: site.baseurl }}">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="{{'/js/navigation.js' | prepend: site.baseurl }}"></script>
 {% if site.headerBackgroundImage != null %}
     {% assign headerBgClass = "headerBgImg" %}
@@ -16,7 +15,7 @@
             {% endif %}
         {% endfor %}
         <a href="javascript:void(0)" class="icon" onclick="handleButtonClick()">
-            <i class="fa fa-bars"></i>
+            <i class="fa">&#x2630</i>
         </a>
     </div>
 </header>

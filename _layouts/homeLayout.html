@@ -19,11 +19,11 @@
             }
 
             .welcomeMsg {
-                padding: 4px;
+                /* padding: 4px; */
                 word-wrap: normal;
                 text-align: center;
-                margin-left: 5%;
-                margin-right: 5%;
+                /* margin-left: 5%;
+                margin-right: 5%; */
                 font-size: {{page.descFontSize}};
                 font-family: "{{page.descFont}}";
                 color: {{page.descFontColor}};
@@ -56,8 +56,6 @@
                     width: 80%;
                     height: 60%;
                     padding: 4px;
-                    margin-left: auto;
-                    margin-right: auto;
                 }
 
                 .responsiveEventContent {
@@ -81,6 +79,8 @@
                 background-color: {{page.backgroundColor}};
                 font-family: "{{page.font}}"; 
                 color: {{page.fontColor}};
+                padding: 0;
+                margin: 0;
             }
 
             a {
@@ -128,10 +128,15 @@
             #page-container {
                 position: relative;
                 min-height: 100vh;
+                margin: 0;
+                padding: 0;
+                width: 100%;
             }
 
             #content-wrap {
-                padding-bottom: 8.5rem;
+                margin: 0;
+                padding: 0;
+                width: 100%;
             }
 
             .upcomingBgImg {
@@ -174,7 +179,7 @@
                         <h2 class="highlights upcoming">Highlights</h2>
                     </section>
                     <section class="upcoming">
-                        {% assign date = site.time | date: "%d-%m-%Y" %}
+                        {% assign date = site.time | date: "%Y-%m-%d" %}
                         {% for event in site.events %}
                             {% assign extension = event.path | split: "." | last %}
                             {% assign fileName = event.path | split: "/" | last | split: "." | first %}

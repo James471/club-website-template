@@ -7,13 +7,30 @@
 <section>
     <footer class={{cls}} id="siteFooter">
         <br>
-        Maintained by <a href="{{'index.html' | prepend: site.baseurl }}" class="textLink">{{site.maintainedBy}}</a>
+        <div style="height: 0.6rem;">
+            Maintained by 
+            <div class="grow" style="display: inline-block;">
+                <a href="{{'index.html' | prepend: site.baseurl }}" class="textLink">{{site.maintainedBy}}</a>
+            </div>
+        </div>
         <br>
-        Theme built by <a href="https://github.com/James471" class="textLink">James</a>
+        <div style="height: 0.6rem;">
+            Theme built by 
+            <span class="grow" style="display: inline-block;">
+                <a href="https://github.com/James471" class="textLink">James</a>
+            </span>
+        </div>
         <br>
-        Website built by <a href="{{site.builtByURL}}" class="textLink">{{site.builtBy}}</a>
+        <div style="height: 0.6rem;">
+            Website built by 
+            <div class="grow" style="display: inline-block;">
+                <a href="{{site.builtByURL}}" class="textLink">{{site.builtBy}}</a>
+            </div>
+        </div>
         <br>
-        Hosted on Github Pages.
+        <div style="height: 0.6rem;">
+            Hosted on Github Pages.
+        </div>
         <br>
         {% include socialLinks.html %}
     </footer>

@@ -3,23 +3,16 @@
 footer {
     text-align: center;
     font-family: "{{site.footerFont}}";
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    height: 8.5rem;   ;
     margin-left: auto;
     margin-right: auto;
+    font-size: 1.2rem;
     color: {{site.footerFontColor}};
 }
 
 .textLink {
-    font-size: 1em;
     visited: {{site.footerFontColor}};
     color: {{site.footerFontColor}};
-}
-
-.textLink:hover {
-    font-size: 1.1em;
 }
 
 .bgImgFooter {

@@ -9,13 +9,14 @@ function getCurrentDate() {
     if ( mm < 10) {
         mm = '0' + mm;
     }
-    return dd+"-"+mm+"-"+yyyy;
+    return yyyy+"-"+mm+"-"+dd;
 }
 
 function cleanUp() {
     var elements = document.getElementsByClassName("event invisible");
     var date = getCurrentDate();
     var c = 0;
+    console.log(elements);
     for (element of elements) {
         var id = element.id;
         var visFrom = id.split(":")[0];

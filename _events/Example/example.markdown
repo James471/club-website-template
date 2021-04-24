@@ -18,11 +18,11 @@ partOfWeek: false
 #Be kind to the developer( I know I shouldn't be asking you for this variable ). Provide the link to this page and end the name of the file with .html
 linkToThisPage: /events/Example/example.html
 
-#Visible on home page from DD-MM-YYYY
-homeVisibilityFrom: 08-12-2020
+#Visible on home page from YYYY-MM-DD
+homeVisibilityFrom: "2019-12-08"
 
-#Visible on home page till DD-MM-YYYY
-homeVisibilityTill: 12-12-2020
+#Visible on home page till YYYY-MM-DD
+homeVisibilityTill: "2022-12-12"
 
 #The path of the poster to be displayed on the left of the description on large screens. On small screens, it will be shown above the
 #description. Leave empty if there is no poster.
