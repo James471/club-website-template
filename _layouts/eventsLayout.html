@@ -9,10 +9,15 @@
             #page-container {
                 position: relative;
                 min-height: 100vh;
+                margin: 0;
+                padding: 0;
+                width: 100%;
             }
 
             #content-wrap {
-                padding-bottom: 8.5rem;
+                margin: 0;
+                padding-bottom: 14rem;
+                width: 100%;
             }
 
             .eventBackgroundImg {
@@ -35,45 +40,59 @@
 
             table, th, td {
                 border: 1px solid;
-                border-color: {{page.highlightsFontColor}};
+                border-color: {{site.eventPageHeadingFontColor}};
+                font-size: 1em;
                 border-collapse: collapse;
-                padding: 4px;
-            }
-
-            table {
-                width: 55%;
+                padding: 8px;
             }
 
             @media screen and (max-width: 600px) {
                 body .eventPoster {
-                    width: 80%;
+                    width: 90%;
                     height: 60%;
-                    padding: 4px;
-                    margin-left: auto;
-                    margin-right: auto;
+                    padding-right: 0px;
                 }
 
                 .responsiveEventContent {
                     display: table-row;
                 }
 
+                .eventPosterDiv {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                table, th, td {
+                    font-size: 0.9em;
+                    padding: 7px;
+                }
+
+                .eventDesc {
+                    font-size: 0.9 em;
+                }
+
             }
-            
+
             .eventPoster {
                 float: left;
                 width: 40%;
                 height: 40%;
-                vertical-align: center;
-                padding: 4px;
-                margin-left: 6px;
-                margin-right: 6px;
-                margin-bottom: 6px;
+                padding-right: 10px;
+                display: block;
             }
 
             .event {
                 display: table-row;
-                margin-right: 6px;
-                padding: 2px;
+            }
+
+            body {
+                padding: 0;
+                margin: 0;
+            }
+
+            .eventContentDiv {
+                margin: 4px;
+                padding: 6px;
             }
 
         </style>
@@ -88,15 +107,19 @@
             <div id="content-wrap">
             {% include header.html %}
             <section class="content event">
-                <img src="{{page.poster | prepend: site.baseurl}}" class="eventPoster">
-                <div class="responsiveEventContent">
-                    <div style="font-size: 1em;">
-                        {{content}}
+                <div class="eventContentDiv">
+                    <div class="eventPosterDiv">
+                        <img src="{{page.poster | prepend: site.baseurl}}" class="eventPoster">
+                    </div>
+                    <div class="responsiveEventContent">
+                        <div style="font-size: 1em;">
+                            {{content}}
+                        </div>
                     </div>
                 </div>
             </section>
             </div>
-            <hr>
+            <br>
         {% include footer.html %}
         </div>
     </body>

@@ -4,9 +4,13 @@ footer {
     text-align: center;
     font-family: "{{site.footerFont}}";
     width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 14rem;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.2rem;
+    margin-bottom: 0px;
     color: {{site.footerFontColor}};
 }
 

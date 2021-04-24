@@ -19,11 +19,8 @@
             }
 
             .welcomeMsg {
-                /* padding: 4px; */
                 word-wrap: normal;
                 text-align: center;
-                /* margin-left: 5%;
-                margin-right: 5%; */
                 font-size: {{page.descFontSize}};
                 font-family: "{{page.descFont}}";
                 color: {{page.descFontColor}};
@@ -39,7 +36,7 @@
                 grid-template-rows: 20px 0;
                 grid-gap: 20px;
             }
-            
+
             h2.highlights:after,h2.highlights:before {
                 content: " ";
                 display: block;
@@ -51,15 +48,41 @@
                 display: none;
             }
 
+            table, th, td {
+                border: 1px solid;
+                border-color: {{page.highlightsFontColor}};
+                font-size: 1em;
+                border-collapse: collapse;
+                padding: 8px;
+            }
+
+            .eventDesc {
+                font-size: 1.1em;
+            }
+
             @media screen and (max-width: 600px) {
                 body .eventPoster {
-                    width: 80%;
+                    width: 90%;
                     height: 60%;
-                    padding: 4px;
+                    padding-right: 0px;
                 }
 
                 .responsiveEventContent {
                     display: table-row;
+                }
+
+                .eventPosterDiv {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                table, th, td {
+                    font-size: 0.9em;
+                    padding: 7px;
+                }
+
+                .eventDesc {
+                    font-size: 0.9 em;
                 }
 
             }
@@ -68,11 +91,8 @@
                 float: left;
                 width: 40%;
                 height: 40%;
-                vertical-align: center;
-                padding: 4px;
-                margin-left: 6px;
-                margin-right: 6px;
-                margin-bottom: 6px;
+                padding-right: 10px;
+                display: block;
             }
 
             body {
@@ -103,28 +123,15 @@
 
             .event {
                 display: table-row;
-                margin-right: 6px;
-                padding: 2px;
             }
 
             .eventName {
                 text-align: left;
                 color: {{page.fontColorEventName}};
                 text-decoration: underline;
+                font-size: 1.8em;
             }
 
-            table, th, td {
-                border: 1px solid;
-                border-color: {{page.highlightsFontColor}};
-                border-collapse: collapse;
-                padding: 4px;
-            }
-
-            table {
-                width: 55%;
-            }
-
-            
             #page-container {
                 position: relative;
                 min-height: 100vh;
@@ -135,7 +142,7 @@
 
             #content-wrap {
                 margin: 0;
-                padding: 0;
+                padding-bottom: 14rem;
                 width: 100%;
             }
 
@@ -147,7 +154,7 @@
             .upcomingBgColor {
                 background-color: {{page.highlightsBackgroundColor}};
             }
-            
+
         </style>
         <script src="{{'/js/homePage.js' | prepend: site.baseurl}}"></script>
     </head>
@@ -180,22 +187,26 @@
                     </section>
                     <section class="upcoming">
                         {% assign date = site.time | date: "%Y-%m-%d" %}
+                        <div style="padding-left: 10px; padding-right: 10px">
                         {% for event in site.events %}
                             {% assign extension = event.path | split: "." | last %}
                             {% assign fileName = event.path | split: "/" | last | split: "." | first %}
                             {% assign id = event.homeVisibilityFrom | append: ":" | append: event.homeVisibilityTill | append: fileName %}
                             {%if date >= event.homeVisibilityFrom and date <= event.homeVisibilityTill and extension == "markdown" and event.displayOnHome %}
                                 <section id="{{id}}" class="event invisible">
-                                    <img src="{{event.poster | prepend: site.baseurl}}" class="eventPoster">
+                                    <div class="eventPosterDiv">
+                                        <img src="{{event.poster | prepend: site.baseurl}}" class="eventPoster">
+                                    </div>
                                     <div class="responsiveEventContent">
                                         <h2 class="eventName">{{event.title}}</h2>
-                                        <div style="font-size: 1em;">
+                                        <div class="eventDesc">
                                             {{event.content | markdownify}}
                                         </div>
                                     </div>
                                 </section>
                             {% endif %}
                         {% endfor %}
+                        </div>
                     </section>
                     <section>
                         <h3 style="text-align: center;" id="noHiglightsMsg">We haven't conspired anything lately.</h3>
