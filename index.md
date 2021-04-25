@@ -6,10 +6,10 @@ layout: indexLayout
 welcomeMsg: Welcome Member!
 
 #The background of the front page
-indexBG: /assets/img/bg/background.jpg
+indexBG: /assets/img/bg/indexMainBg.jpeg
 
 #The background of the about us section
-aboutUsBg: /assets/img/bg/aboutUsBg.jpg
+aboutUsBg: /assets/img/bg/aboutUsBg.png
 
 #Short description of the club
 aboutUs: Our club is a club. It does things. Lots of things. 
