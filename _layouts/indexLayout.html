@@ -8,12 +8,18 @@
     <link rel="stylesheet" href="{{'/assets/css/animation.css' | prepend: site.baseurl}}">
     <style>
 
-        html.index { 
+        #mainDiv { 
             background: url('{{page.indexBG | prepend: site.baseurl}}') no-repeat center fixed; 
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            margin: 0px;
         }
 
         h1 {
@@ -44,30 +50,66 @@
         }
 
         .centerize {
-            position: absolute;
+            /* position: absolute;
             top: 50%;
             left: 50%;
             margin-right: -50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); */
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            margin: 0 auto;
             text-align: center;
             word-wrap: normal;
         }
 
+        #aboutAndSocialDiv {
+            text-align: center;
+            word-wrap: normal;
+            background: url('{{page.aboutUsBg | prepend: site.baseurl}}') no-repeat center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+
+        #aboutUs {
+            font-family: "{{page.indexFont}}";
+            color: {{page.indexFontColor}};
+        }
+
     </style>
     <body>
-        <div class="animated1 fadeIn centerize">
-            <img src="{{site.logo | prepend: site.baseurl}}" class="logo">
-            <h1>{{site.title}}</h1>
-            <h2>{{page.description}}</h2>
+        <div id="mainDiv">
+            <div class="animated1 fadeIn centerize">
+                <img src="{{site.logo | prepend: site.baseurl}}" class="logo">
+                <h1>{{site.title}}</h1>
+                <h1>{{site.instituteName}}</h1>
+                <h2>{{page.welcomeMsg}}</h2>
+                <br>
+                {%for pg in site.pageList%}
+                    <div class="grow" style="padding-top: 4px; padding-bottom: 4px; width: max-content; margin: 0 auto;">
+                        <a href="{{pg.url | prepend: site.baseurl}}" class="pages">{{pg.name}}</a>
+                        <br>
+                    </div>
+                {%endfor%}
+                <br>
+            </div>
+        </div>
+        <div id="aboutAndSocialDiv">
             <br>
-            {%for pg in site.pageList%}
-                <div class="grow" style="padding-top: 4px; padding-bottom: 4px; width: max-content; margin: 0 auto;">
-                    <a href="{{pg.url | prepend: site.baseurl}}" class="pages">{{pg.name}}</a>
-                    <br>
-                </div>
-            {%endfor%}
+            <h1 style="display: inline; text-decoration: underline; font-size: 3wem;">About Us</h1>
             <br>
+            <br>
+            <div id="aboutUs">
+                {{page.aboutUs}}
+            </div>
+            <br>
+            <hr>
             {% include socialLinks.html%}
+            <br>
         </div>
     </body>
 </html>
