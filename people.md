@@ -10,5 +10,5 @@ pageBackgroundColor: black
 
 #Font of the page
 font:
-fontColor:
+fontColor: white
 ---

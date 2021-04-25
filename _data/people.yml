@@ -1,9 +1,7 @@
 - name: AA
   imageURL: /assets/img/people/test.png
-  role: Convenor
-  postHeldDuring: 2019-2020
+  role: Convenor(2019-2020)
 
 - name: AB
   imageURL: /assets/img/people/test.png
-  role: Co-convenor
-  postHeldDuring: 2019-2020
+  role: Co-convenor(2019-2020)

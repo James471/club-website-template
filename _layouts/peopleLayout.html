@@ -13,40 +13,7 @@
             }
 
             #content-wrap {
-                padding-bottom: 8.5rem;
-            }
-
-            .cf:before, .cf:after {
-                content: " ";
-                display: table;
-            }
-
-            .cf:after {
-                clear: both;
-            }
-
-            .cf {
-                *zoom: 1;
-            }
-
-            .fl {
-                float: left;
-                _display: inline;
-            }
-
-            .w-100 {
-                width: 100%;
-            }
-
-            @media screen and (min-width: 30em) {
-                .w-50-ns {
-                    width: 50%;
-                }
-            }
-
-            .personDesc {
-                margin-left: 10%;
-                text-align: left;
+                padding-bottom: 14rem;
             }
 
             .pageFont {
@@ -63,6 +30,50 @@
                 background-color: {{page.backgroundColor}};
             }
 
+            body {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .peopleRow {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .peopleColumn {
+                flex: 90%;
+            }
+
+            @media screen and (min-width: 650px) {
+                .peopleColumn {
+                    flex: 45%;
+                }
+            }
+
+            @media screen and (min-width: 1200px) {
+                .peopleColumn {
+                    flex: 33%;
+                }
+            }
+
+            .peopleColumn {
+                border-style: solid;
+                border-width: 1px;
+                margin-bottom: 10px;
+                border-collapse: collapse;
+                border-color: {{page.fontColor}};
+                padding-left: 6px;
+                margin-left: 4px;
+                margin-right: 4px;
+                padding-right: 4px;
+                width: 95%;
+            }
+
+            .personImg {
+                height: auto;
+                width: 95%;
+            }
+
         </style>
     </head>
     <body style="background-color: {{page.pageBackgroundColor}};">
@@ -75,19 +86,17 @@
                     {% assign cls = "peopleBgColor" %}
                 {% endif %}
                 <hr>
-                <section class="animated1 fadeIn pageFont {{cls}}">
+                <section class="animated1 fadeIn pageFont {{cls}} peopleRow">
                     {% for person in site.data.people %}
-                        <article class="cf">
-                            <div class="fl w-100 w-50-ns">
-                                <img src="{{person.imageURL | prepend: site.baseurl}}" style="height: 400px; width: 400px;">
+                        <article class="peopleColumn">
+                            <div style="display: flex; justify-content: center; padding-top: 10px;">
+                                <img src="{{person.imageURL | prepend: site.baseurl}}" class="personImg">
                             </div>
-                            <div class="fl w-100 w-50-ns">
+                            <div style="text-align: center;">
                                 <p>Name: {{person.name}}</p>
                                 <p>Role: {{person.role}}</p>
-                                <p>Post Held During: {{person.postHeldDuring}}</p>
                             </div>
                         </article>
-                        <hr>
                     {% endfor %}
                 </section>
             </div>
