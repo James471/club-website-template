@@ -24,23 +24,20 @@
         }
 
         h1 {
-            color: {{page.clubNameColor}};
-            font-family: "{{page.clubNameFont}}";
             text-transform: uppercase;
             font-size: 4.5em;
         }
 
         h2 {
-            color: {{page.indexFontColor}};
-            font-family: "{{page.indexFont}}";
             word-wrap: normal;
             font-size: 4em;
         }
 
         a.pages {
             font-size: 2em;
-            visited: {{page.indexFontColor}};
-            color: {{page.indexFontColor}};
+            font: "{{page.pageNameFont}}"
+            visited: {{page.pageNameFontColor}};
+            color: {{page.pageNameFontColor}};
         }
 
         .logo {
@@ -77,8 +74,23 @@
         }
 
         #aboutUs {
-            font-family: "{{page.indexFont}}";
-            color: {{page.indexFontColor}};
+            font-family: "{{page.aboutUsFont}}";
+            color: {{page.aboutUsFontColor}};
+        }
+
+        .clubNameFont {
+            font: "{{page.clubNameFont}}";
+            color: {{page.clubNameFontColor}};
+        }
+
+        .welcomeMessageFont {
+            font: "{{page.welcomeMessageFont}}";
+            color: {{page.welcomeMessageFontColor}};
+        }
+
+        .aboutUsHeadingFont {
+            font: "{{page.aboutUsHeadingFont}}";
+            color: {{page.aboutUsHeadingFontColor}};
         }
 
     </style>
@@ -86,9 +98,9 @@
         <div id="mainDiv">
             <div class="animated1 fadeIn centerize">
                 <img src="{{site.logo | prepend: site.baseurl}}" class="logo">
-                <h1>{{site.title}}</h1>
-                <h1>{{site.instituteName}}</h1>
-                <h2>{{page.welcomeMsg}}</h2>
+                <h1 class="clubNameFont">{{site.title}}</h1>
+                <h1 class="clubNameFont">{{site.instituteName}}</h1>
+                <h2 class="welcomeMessageFont">{{page.welcomeMsg}}</h2>
                 <br>
                 {%for pg in site.pageList%}
                     <div class="grow" style="padding-top: 4px; padding-bottom: 4px; width: max-content; margin: 0 auto;">
@@ -101,7 +113,7 @@
         </div>
         <div id="aboutAndSocialDiv">
             <br>
-            <h1 style="display: inline; text-decoration: underline; font-size: 3em;">About Us</h1>
+            <h1 style="display: inline; text-decoration: underline; font-size: 3em;" class="aboutUsHeadingFont">About Us</h1>
             <br>
             <br>
             <div id="aboutUs">

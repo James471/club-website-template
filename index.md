@@ -14,13 +14,23 @@ aboutUsBg: /assets/img/bg/aboutUsBg.png
 #Short description of the club
 aboutUs: Our club is a club. It does things. Lots of things. 
 
-#The text color for the club name(i.e. the title). You can give the color in rgb too.
-clubNameColor: white
-
-#The font for the club name
+#The font for club name and institute name
 clubNameFont: Arial, Helvetica, sans-serif
+clubNameFontColor: black
 
-#The font of the description and the links to other pages.
-indexFont: Arial, Helvetica, sans-serif
-indexFontColor: white
+#The font for welcome message
+welcomeMessageFont: Arial, Helvetica, sans-serif
+welcomeMessageFontColor: black
+
+#The font for the name of pages and links
+pageNameFont: Arial, Helvetica, sans-serif
+pageNameFontColor: black
+
+#The font of the heading "About us"
+aboutUsHeadingFont: Arial, Helvetica, sans-serif
+aboutUsHeadingFontColor: white
+
+#The font of the about us content
+aboutUsFont: Arial, Helvetica, sans-serif
+aboutUsFontColor: black
 ---
