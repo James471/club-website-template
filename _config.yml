@@ -16,10 +16,11 @@ headerFont:
 #The fontcolor of everything in the header
 headerFontColor: white
 
-#The background of the header. If you want image, leave the headerBackgroundColor empty and vice-versa
+#The background of the header. If you want image, leave the headerBackgroundColor empty and vice-versa. Hex must be enclosed in quotes.
 headerBackgroundImage: /assets/img/bg/header.jpeg
 headerBackgroundImageOpacity: 0.8
-headerActivePageButtonBackground:
+headerActivePageButtonBackground: '#031cfc'
+headerHoverPageButtonBackground: '#0390fc'
 headerBackgroundColor: 
 
 #The font for everything in the footer
@@ -34,17 +35,19 @@ footerBackgroundImage: /assets/img/bg/footer.jpeg
 
 #The background for each event page
 eventPageBackgroundImage: 
-eventPageBackgroundColor:
+eventPageBackgroundColor: '#7fbcff'
 
 #The font for each event page
 eventPageHeadingFont:
-eventPageHeadingFontColor:
+# eventPageHeadingFontColor: white This property is non-functional.
 eventPageOtherFont:
-eventPageOtherFontColor:
+eventPageOtherFontColor: black
 
 #The list of pages on your website
 pageList:
   - name: Home
+    url: /index.html
+  - name: Announcements
     url: /home.html
   - name: Past Events
     url: /pastEvents.html

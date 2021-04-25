@@ -4,10 +4,10 @@ layout: pastEventsLayout
 
 #The page background. Leave image empty if you want color otherwise, supply the link to the image.
 pastEventsBackgroundImage:
-pastEventsBackgroundColor:
+pastEventsBackgroundColor: white
 
 #The background of the whole page. It fills up empty gaps.
-pastEventsPageBackGroundColor:
+pastEventsPageBackGroundColor: white
 
 #The font of the heading 'Past Events'
 headingFont:

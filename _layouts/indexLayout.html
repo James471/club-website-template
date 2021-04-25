@@ -16,7 +16,7 @@
             background-size: cover;
             margin: 0px;
             padding: 0px;
-            height: 100vh;
+            height: fit-content;
         }
 
         body {
@@ -103,10 +103,12 @@
                 <h2 class="welcomeMessageFont">{{page.welcomeMsg}}</h2>
                 <br>
                 {%for pg in site.pageList%}
-                    <div class="grow" style="padding-top: 4px; padding-bottom: 4px; width: max-content; margin: 0 auto;">
-                        <a href="{{pg.url | prepend: site.baseurl}}" class="pages">{{pg.name}}</a>
-                        <br>
-                    </div>
+                    {%if pg.url != '/index.html'%}
+                        <div class="grow" style="padding-top: 4px; padding-bottom: 4px; width: max-content; margin: 0 auto;">
+                            <a href="{{pg.url | prepend: site.baseurl}}" class="pages">{{pg.name}}</a>
+                            <br>
+                        </div>
+                    {%endif%}
                 {%endfor%}
                 <br>
             </div>

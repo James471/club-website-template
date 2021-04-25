@@ -28,14 +28,14 @@
                 background-color: {{site.eventPageBackgroundColor}};
             }
 
+            .content {
+                font-family: "{{site.eventPageFont}}";
+                color: {{site.eventPageOtherFontColor}};
+            }
+
             h1.content {
                 font-family: "{{site.eventPageHeadingFont}}";
                 color: {{site.eventPageHeadingFontColor}}
-            }
-
-            .content {
-                font-family: "{{site.eventPageFont}}";
-                color: {{site.eventPageFontColor}};
             }
 
             table, th, td {
@@ -47,6 +47,7 @@
             }
 
             @media screen and (max-width: 600px) {
+
                 body .eventPoster {
                     width: 90%;
                     height: 60%;
@@ -100,7 +101,7 @@
     {% if site.eventPageBackgroundImage != null %}
         {% assign cls = "eventBackgroudImg" %}
     {% else %}
-        {% assign cls = "eventBackgroudColor" %}
+        {% assign cls = "eventBackgroundColor" %}
     {% endif %}
     <body class={{cls}}>
         <div id="page-container">

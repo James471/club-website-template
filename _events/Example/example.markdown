@@ -35,7 +35,7 @@ layout: eventsLayout
 ---
 # Hello, Scions of Newton!
 
-We're back, and we're keeping our annual promise!
+We're back, and we're keeping our annual promise!F
 
 It wouldn't be wrong to say that we all resemble close to the particle in a box now, oscillating at the lowest node (yep, your bed).
 

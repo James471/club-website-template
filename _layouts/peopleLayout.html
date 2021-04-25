@@ -44,6 +44,11 @@
                 flex: 90%;
             }
 
+            .personImg {
+                height: auto;
+                width: 90%;
+            }
+
             @media screen and (min-width: 650px) {
                 .peopleColumn {
                     flex: 45%;
@@ -54,6 +59,11 @@
                 .peopleColumn {
                     flex: 33%;
                 }
+
+                .personImg {
+                    height: 550px;
+                }
+
             }
 
             .peopleColumn {
@@ -69,14 +79,30 @@
                 width: 95%;
             }
 
-            .personImg {
-                height: auto;
-                width: 95%;
+            .bgImgPeopleAbout {
+                background-image: url('{{page.peopleAboutBackgroundImg | prepend: site.baseurl}}');
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                padding: 0px;
+            }
+
+            .bgColorPeopleAbout {
+                background-color: {{page.descBackgroundColor}};
+            }
+
+            .peopleAbout {
+                word-wrap: normal;
+                text-align: center;
+                font-family: "{{page.peopleAboutFont}}";
+                color: {{page.peopleAboutFontColor}};
+                padding-left: 10px;
+                padding-right: 10px;
             }
 
         </style>
     </head>
-    <body style="background-color: {{page.pageBackgroundColor}};">
+    <body style="background-color: {{page.backgroundColor}};">
         <div id="page-container">
             <div id="content-wrap">
                 {% include header.html %}
@@ -85,7 +111,20 @@
                 {% else %}
                     {% assign cls = "peopleBgColor" %}
                 {% endif %}
-                <hr>
+                {% if page.peopleAboutBackgroundImg != null %}
+                    {% assign cls2 = "bgImgPeopleAbout" %}
+                {% else %}
+                    {% assign cls2 = "bgColorPeopleAbout" %}
+                {% endif %}
+                <div class={{cls2}} style="margin-bottom: 8px;">
+                    <div class="peopleAbout">
+                        <br>
+                        <br>
+                        {{content}}
+                        <br>
+                        <br>
+                    </div>
+                </div>
                 <section class="animated1 fadeIn pageFont {{cls}} peopleRow">
                     {% for person in site.data.people %}
                         <article class="peopleColumn">

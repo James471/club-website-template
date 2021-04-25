@@ -40,13 +40,13 @@ header {
     font-size: 17px;
 }
 
-.topnav a:hover {
-    background-color: {{site.headerActivePageButtonBackground}}
+.topnav a.active {
+    background-color: {{site.headerActivePageButtonBackground}};
     color: {{site.headerFontColor}};
 }
 
-.topnav a.active {
-    background-color: {{site.headerActivePageButtonBackground}};
+.topnav a:hover {
+    background-color: {{site.headerHoverPageButtonBackground}}
     color: {{site.headerFontColor}};
 }
 
