@@ -4,6 +4,9 @@ baseurl: /club-website-template
 #The title appears on the first page
 title: The Club
 
+#Name of the institute
+instituteName: IISER-M
+
 #The logo appears as a small circular image above the title
 logo: /assets/img/logo.png 
 
