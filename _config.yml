@@ -26,11 +26,11 @@ headerBackgroundColor:
 footerFont: Arial, Helvetica, sans-serif
 
 #The fontcolor of everything in the footer
-footerFontColor: white
+footerFontColor: black
 
 #The background color of the footer
 footerBackgroundColor: black
-footerBackgroundImage: /assets/img/bg/indexMainBg.jpeg
+footerBackgroundImage: /assets/img/bg/footer.jpeg
 
 #The background for each event page
 eventPageBackgroundImage: 
