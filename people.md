@@ -22,4 +22,4 @@ font:
 fontColor: black
 ---
 # People
-Here goes your warm message about the people of the club. This club like all other clubs is made up of people, nice, horny people.
+Here goes your warm message about the people of the club. This club like all other clubs is made up of people, nice people.
