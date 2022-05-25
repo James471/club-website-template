@@ -10,7 +10,7 @@ Install ruby. You can download ruby from its [official website](https://rubyinst
 
 Go to start and search 'ruby'. You will find ```start command prompt with ruby```. Open it and type ```gem install jekyll``` and press enter. If you use mac or linux, I assume you know what to do.
 
-Click on ```Use this template button``` on the page of this repository. You will get the option to fork this repo. Do that and clone it locally. Then, open ruby command prompt and cd to the directory of this repo. Run ```bundle install```. Now you should be set.
+Click on ```Use this template button``` on the page of this repository. You will get the option to fork this repo. Make a public fork if you want to receive pull requests(i.e., receive the changes that I might make in future in this template). Next, clone your fork locally. Then, open ruby command prompt and cd to the directory of this repo. Run ```bundle install```. Now you should be set.
 
 **Here comes the tricky part**
 
