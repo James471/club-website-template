@@ -23,7 +23,7 @@ This theme has 5 layouts and 3 includes.
 ### Available layouts
 
 **Move to the markdown files as mentioned in the description of each layout below for further instructions on customization. You don't need to change any of the layout files. Just change their markdown files.**
-1. indexLayout.html &rarr; It is the front page your website. The name of your club, its logo and the links to other pages can be customized in _config.yml while the background and fonts can be changed in the front matter of ```home.md```. For customizing the social links, see the includes section.
+1. indexLayout.html &rarr; It is the front page your website. The name of your club, its logo and the links to other pages can be customized in _config.yml while the background and fonts can be changed in the front matter of ```index.md```. For customizing the social links, see the includes section.
 3. homeLayout.html &rarr; It is the home page of your website. All the customization for this page except the header and footer can be made in the front matter of ```home.md```
 4. eventsLayout.html &rarr; It is used by all the events. The font and background can be customized in _config.yml. A sample markdown file for an example event is provided in _events/Example. It contains further details.
 5. pastEventsLayout.html &rarr; It's the archive of all the events conducted by your club. It can be customized in the front matter of ```pastEvents.md```. It automatically lists your posts from the _events  folder. You can have subfolders in _events for organization purposes. It won't have any effect on the code.
